@@ -1,0 +1,72 @@
+.cards-form {
+  width: 270px;
+  grid-gap: 10px;
+  top: 50%;
+  position: absolute;
+  transform: translate(0, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "size size"
+    "radius radius"
+    "square square"
+    "prev next";
+
+  .size {
+    grid-area: size;
+  }
+  .radius {
+    grid-area: radius;
+    position: relative;
+    &:after {
+      content: "px";
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background-color: white;
+      border-left: 1px solid #ddd;
+      right: 0;
+      top: 0;
+      padding: 12px 0px 2px 10px;
+      font-weight: bold;
+      color: #c8c8c8;
+      margin: 1px 4px;
+    }
+  }
+  .square {
+    grid-area: square;
+    margin-top: 60px;
+  }
+  .prev {
+    grid-area: prev;
+  }
+  .next {
+    grid-area: next;
+  }
+
+  input[type="text"],
+  button {
+    border: 1px solid grey;
+    border-radius: 4px;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 36px);
+    height: 44px;
+    padding: 0 16px;
+    font-size: .95em;
+    font-weight: bold;
+  }
+
+  button {
+    height: 46px;
+    padding: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .95em;
+    width: 100%;
+    background-color: white;
+  }
+}

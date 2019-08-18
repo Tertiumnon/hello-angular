@@ -1,0 +1,22 @@
+.virtual-phone {
+  width: 300px;
+  height: 480px;
+  background-color: white;
+  border-radius: 16px;
+  top: 50%;
+  position: absolute;
+  transform: translate(0, -50%);
+  overflow: hidden;
+  right: 0;
+  .task-text {
+    padding: 40px 60px 60px 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: .9em;
+    color: #191919;
+    line-height: 1.8;
+    span {
+      color: #5e6fff;
+    }
+  }
+}

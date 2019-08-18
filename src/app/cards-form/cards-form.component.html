@@ -1,0 +1,30 @@
+<div class="cards-form">
+  <div class="size">
+    <input
+      type="text"
+      name="size"
+      placeholder="Size"
+      [(ngModel)]="size"
+      (ngModelChange)="onSizeChange($event)"
+    />
+  </div>
+  <div class="radius">
+    <input
+      type="text"
+      name="radius"
+      id="radius"
+      placeholder="Corner radius"
+      [(ngModel)]="radius"
+      (ngModelChange)="onRadiusChange($event)"
+    />
+  </div>
+  <div class="square">
+    <button (click)="addSquare()">Add square</button>
+  </div>
+  <div class="prev">
+    <button (click)="onPrev()">Prev</button>
+  </div>
+  <div class="next">
+    <button (click)="onNext()">Next</button>
+  </div>
+</div>

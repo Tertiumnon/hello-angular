@@ -1,0 +1,10 @@
+.cards-slider {
+  display: flex;
+  transition: all 1s ease-in-out;
+}
+
+.card {
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  margin: 0 10px 0 0;
+}

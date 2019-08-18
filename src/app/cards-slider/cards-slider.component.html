@@ -1,0 +1,22 @@
+<div class="cards-slider"
+    [ngStyle]="{
+      'width': width + 'px',
+      'margin-left': margin + 'px'
+    }"
+  >
+  <div *ngFor="let card of cards" class="card"
+    [ngStyle]="{
+      'width': size + 'px',
+      'height': size + 'px',
+      'opacity': card.opacity,
+      'border-radius': radius + 'px'
+    }"
+  >
+    <img src={{card.src}}
+      [ngStyle]="{
+        'width': size + 'px',
+        'height': size + 'px'
+      }"
+    />
+  </div>
+</div>
